@@ -1,0 +1,26 @@
+server:
+  port: 8085
+
+spring:
+  kafka:
+    bootstrap-server: localhost:9092
+    consumer:
+      group-id: billing-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      auto-offset-reset: earliest
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/billing_db
+    username: admin
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: updates
+      show-sql: true
+
+# Stripe/Payment Config
+payment:
+  stripe:
+    secret-key: sk_test_your_key
+    currency: USD

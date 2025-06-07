@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: appointment-service
+          uri: lb://appointment-service
+          predicates:
+            - Path=/api/appointments/**
+          filters:
+            - StripePrefix=1
+            - name: CircuitBreaker
+              args:
+                name: appointmentCB
+                fallbackUri: forward:/fallback/appointment
+        - id: patient-service
+          uri: lb://patient-service
+          predicates:
+            - Path:/api/patients/**
+      discovery:
+        locator:
+          enabled: true # Enable service discovery (if using Eureka)
+
+# Circuit Breaker (Resilience4j)
+resilience4j:
+  circuitbreaker:
+    instances:
+      appointmentCB:
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        sliding-window-size: 10
+
+
+

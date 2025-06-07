@@ -1,0 +1,23 @@
+server:
+  port:8082
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/patient_db
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  grpc:
+    server:
+      port: 9090  # gRPC server port
+
+# gRPC Client (if calling another gRPC service)
+grpc:
+  client:
+    doctor-service:
+      address: static://localhost:9091
+      enable-keep-alive: true

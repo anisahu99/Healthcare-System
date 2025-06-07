@@ -1,0 +1,25 @@
+server:
+  port:8084
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enable: true
+          max-attempts: 3
+
+# Email/SMS Config (customize)
+notification:
+  sms:
+    provider-url: https://api.twilio.com
+    api-key: your_api_key
+  email:
+    host: smtp.gmail.com
+    port: 587
+    username: your_email@gmail.com
+    password: your_password

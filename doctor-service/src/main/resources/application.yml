@@ -1,0 +1,23 @@
+server:
+  port:8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/doctor_db
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  graphql:
+    graphiql:
+      enabled: true # Enable GraphQL UI at /graphiql
+    schema:
+      printer:
+        enabled: true
+
+# gRPC Server
+grpc:
+  server:
+    port: 9091
