@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS appointment (
+    id SERIAL PRIMARY KEY,
+    patient_id VARCHAR(255) NOT NULL,
+    doctor_id VARCHAR(255) NOT NULL,
+    appointment_time TIMESTAMP NOT NULL,
+    status VARCHAR(50) NOT NULL
+);
