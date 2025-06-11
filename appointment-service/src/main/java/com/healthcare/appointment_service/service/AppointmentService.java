@@ -33,6 +33,7 @@ public class AppointmentService {
                 Appointment savedAppointment = repository.save(appointment);
 
                 // Publish Kafka event
+                System.out.println("Before Kafka");
                 kafkaTemplate.send("appointment-events",
                         new AppointmentEvent(
                                 "event-" + System.currentTimeMillis(),
@@ -42,6 +43,7 @@ public class AppointmentService {
                                 "CREATED"
                         )
                 );
+                System.out.println("After Publish Kafka Event");
 
                 return savedAppointment;
             }

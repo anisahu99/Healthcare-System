@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4e9f96a-f9e3-4ed9-b116-3ce24700a169" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/healthcare-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/controller/AppointmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/dto/AppointmentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/AppointmentEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/repository/AppointmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/resources/redisson.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/implement-service&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
