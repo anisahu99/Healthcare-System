@@ -74,6 +74,23 @@
 			<artifactId>redisson-spring-boot-starter</artifactId>
 			<version>${redisson.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+		<dependency>
+			<groupId>com.healthcare</groupId>
+			<artifactId>appointment-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!--	Hibernate Validator	-->
+
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

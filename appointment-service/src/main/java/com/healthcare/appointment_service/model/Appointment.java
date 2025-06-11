@@ -2,6 +2,8 @@ package com.healthcare.appointment_service.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.jetbrains.annotations.NotNull;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -13,6 +15,16 @@ public class Appointment {
 
     private String patientId;
     private String doctorId;
-    private LocalDateTime appointmentTime;
+
+    @Column(unique = true) // Prevents duplicates slot
+    private LocalDateTime slotStart;
+    private LocalDateTime slotEnd;
     private String status; // BOOKED, CANCELLED, COMPLETED
+
+    //  private LocalDateTime appointmentTime;
+    // Business Logic Method
+    @NotNull
+    public boolean overlaps(Appointment other){
+        return this.slotStart.isBefore(other.slotEnd) && this.slotEnd.isAfter(other.slotStart);
+    }
 }
