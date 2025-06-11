@@ -21,4 +21,10 @@ public class AppointmentController {
     public String healthCheck() {
         return "Appointment Service is UP!";
     }
+
+//    @GetMapping("/{id}")
+//    public Appointment getAppointment(@PathVariable Long id){
+//        return appointmentService.getAppointmentById(id);   // abhi implement karna hai
+//    }
+
 }
