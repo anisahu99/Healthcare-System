@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4e9f96a-f9e3-4ed9-b116-3ce24700a169" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/dto/SlotRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/controller/SlotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/dto/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/exception/BookingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/exception/ConcurrentBookingException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/exception/SlotNotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/messaging/SlotEventPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/SlotEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/service/SlotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/validation/DurationMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/validation/DurationMaxValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/validation/DurationMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/validation/DurationMinValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appointment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/controller/AppointmentController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appointment-service/src/main/java/com/healthcare/appointment_service/service/AppointmentService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +42,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8

@@ -80,11 +80,7 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-		<dependency>
-			<groupId>com.healthcare</groupId>
-			<artifactId>appointment-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 		<!--	Hibernate Validator	-->
 
 		<dependency>
