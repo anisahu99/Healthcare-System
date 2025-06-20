@@ -3,8 +3,6 @@ package com.healthcare.appointment_service.model;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.Accessors;
-import org.jetbrains.annotations.NotNull;
-
 import java.time.LocalDateTime;
 
 @Entity
