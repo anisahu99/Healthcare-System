@@ -12,4 +12,10 @@ public class GlobalExceptionHandler {
     public ApiError handlePatientNotFound(PatientNotFoundException ex){
         return new ApiError("PATIENT_NOT_FOUND", ex.getMessage(), false);
     }
+
+    @ExceptionHandler(DuplicatePatientException.class)
+    @ResponseStatus(HttpStatus.CONFLICT)
+    public ApiError handleDuplicatePatientException(DuplicatePatientException ex){
+        return new ApiError("DUPLICATE_PATIENT",ex.getMessage(),false);
+    }
 }
