@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "PatientProto";
+
+service PatientService {
+    rpc GetPatient (PatientRequest) returns (PatientResponse);
+}
+message PatientRequest {
+    string id = 1;
+}
+message PatientResponse{
+    string patient_id = 1;
+    string full_name = 2;
+    string contact_number = 3;
+    string medical_history = 4;
+}

@@ -61,6 +61,18 @@
 			<artifactId>spring-grpc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -93,9 +105,8 @@
 				<artifactId>protobuf-maven-plugin</artifactId>
 				<version>3.3.1</version>
 				<configuration>
-					<sourceDirectories>
-						<sourceDirectory>src/main/proto</sourceDirectory>
-					</sourceDirectories>
+					<sourceDirectories>${project.basedir}/src/main/java/com/healthcare/patient_service/service/grpc/proto</sourceDirectories>
+					<outputDirectory>${project.basedir}/src/main/java/com/healthcare/patient_service/service/grpc</outputDirectory>
 					<protocVersion>${protobuf-java.version}</protocVersion>
 					<binaryMavenPlugins>
 						<binaryMavenPlugin>
