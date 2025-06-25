@@ -53,7 +53,7 @@ public class SlotService {
 
                 // Publish Event
                 SlotEvent event = new SlotEvent()
-                        .setId(saved.getId().toString())
+                        .setEventId(saved.getId().toString())
                                 .setDoctorId(saved.getDoctorId())
                                         .setSlotStart(saved.getSlotStart())
                                                 .setStatus(saved.getStatus());

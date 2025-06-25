@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Accessors(chain = true)
 public class SlotEvent {
-    private String id;
+    private String eventId;
     private String doctorId;
     private LocalDateTime slotStart;
     private String status; // BOOKED, CANCELLED, COMPLETED

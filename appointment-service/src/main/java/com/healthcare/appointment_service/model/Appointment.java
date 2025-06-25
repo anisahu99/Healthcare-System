@@ -19,12 +19,4 @@ public class Appointment {
     private LocalDateTime slotStart;
     private LocalDateTime slotEnd;
     private String status; // BOOKED, CANCELLED, COMPLETED
-
-    //  private LocalDateTime appointmentTime;
-
-
-    // Business Logic Method
-    public boolean overlaps(Appointment other){
-        return this.slotStart.isBefore(other.slotEnd) && this.slotEnd.isAfter(other.slotStart);
-    }
 }
