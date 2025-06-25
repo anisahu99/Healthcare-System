@@ -16,4 +16,6 @@ public class SlotEvent {
     private String doctorId;
     private LocalDateTime slotStart;
     private String status; // BOOKED, CANCELLED, COMPLETED
+                                                // Run scheduler when appointment gets completed or cancelled
+                                                // Case when patient not reached to the doctor
 }
