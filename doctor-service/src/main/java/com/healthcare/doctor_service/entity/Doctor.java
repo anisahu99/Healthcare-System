@@ -11,6 +11,9 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Table(name = "Doctor", uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"country_code", "phone_number"})
+})
 @Getter @Setter @Accessors(chain = true) @NoArgsConstructor @AllArgsConstructor
 public class Doctor {
     @Id
@@ -23,6 +26,12 @@ public class Doctor {
     private String lastName;
 
     private String specialization;
+
+    @Column(name = "country_code", length = 5, nullable = false)
+    private String countryCode; //  +1, +91, etc.
+
+    @Column(name = "phone_number", length = 15, nullable = false)
+    private String phoneNumber; //  9415050850
 
     @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL)
     private List<Slot> availabilitySlots;

@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Entity
@@ -22,5 +23,11 @@ public class Slot {
 
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private boolean isBooked;
+    private boolean booked;
+
+    public boolean overlaps(Slot other) {
+        return this.startTime.isBefore(other.endTime) &&
+                this.endTime.isAfter(other.startTime);
+    }
 }
+

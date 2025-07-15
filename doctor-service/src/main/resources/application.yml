@@ -9,7 +9,7 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
   graphql:
     graphiql:
       enabled: true # Enable GraphQL UI at /graphiql
@@ -21,3 +21,7 @@ spring:
 grpc:
   server:
     port: 9091
+
+# Custom Properties
+redisson:
+  config: classpath:/redisson.yml

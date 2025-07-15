@@ -30,8 +30,8 @@
         </processorPath>
         <module name="appointment-service" />
         <module name="notification-service" />
-        <module name="doctor-service" />
         <module name="billing-service" />
+        <module name="doctor-service" />
       </profile>
     </annotationProcessing>
   </component>
