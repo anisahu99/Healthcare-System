@@ -19,7 +19,9 @@ public class DoctorService {
             Doctor doctor = new Doctor()
                     .setFirstName(request.getFirstName())
                     .setLastName(request.getLastName())
-                    .setSpecialization(request.getSpecialization());
+                    .setSpecialization(request.getSpecialization())
+                    .setCountryCode(request.getCountryCode())
+                    .setPhoneNumber(request.getPhoneNumber());
 
             Doctor saved = doctorRepository.save(doctor);
             return mapToResponse(saved);
@@ -51,6 +53,7 @@ public class DoctorService {
         return new DoctorResponse()
                 .setDoctorId(doctor.getDoctorId())
                 .setFullName(doctor.getFirstName() + " " + doctor.getLastName())
-                .setSpecialization(doctor.getSpecialization());
+                .setSpecialization(doctor.getSpecialization())
+                .setPhoneNumber(doctor.getCountryCode()+doctor.getPhoneNumber());
     }
 }

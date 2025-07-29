@@ -39,7 +39,11 @@ public class AvailabilityService {
 
     public List<Slot> getAvailability(String doctorId){
         try{
-            return slotRepository.findByDoctor_DoctorIdAndBookedFalse(doctorId);
+            System.out.println("doctorId: "+doctorId);
+//            String dbDoctorId = doctorRepository.findAll().get(0).getDoctorId();
+            List<Slot> result = slotRepository.findAvailableSlotsByDoctor(doctorId);
+            System.out.println("Size of List: "+result.size());
+            return result;
         } catch (RuntimeException e) {
             throw new RuntimeException("Error at interacting with db", e);
         }
@@ -58,6 +62,7 @@ public class AvailabilityService {
                 throw new RuntimeException("Could not acquire lock for slot booking. Please retry");
             }
             try{
+                System.out.println("In the Lock");
                 // Critical section - only one thread per cluster can execute this
                 Slot slot = slotRepository.findById(slotId)
                         .orElseThrow(() -> new EntityNotFoundException("Slot not found"));

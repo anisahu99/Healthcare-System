@@ -1,5 +1,6 @@
 package com.healthcare.doctor_service.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,6 +35,7 @@ public class Doctor {
     private String phoneNumber; //  9415050850
 
     @OneToMany(mappedBy = "doctor", cascade = CascadeType.ALL)
+    @JsonManagedReference
     private List<Slot> availabilitySlots;
 
     @PrePersist

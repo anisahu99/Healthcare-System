@@ -12,4 +12,8 @@ public class DoctorRequest {
     private String lastName;
     @NotBlank
     private String specialization;
+    @NotBlank
+    private String countryCode;
+    @NotBlank
+    private String phoneNumber;
 }

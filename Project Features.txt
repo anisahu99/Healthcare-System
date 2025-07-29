@@ -1,0 +1,13 @@
+Doctor Service
+	--Consist
+	-- 1.Doctor Details
+	-- 2.Slots of each doctor
+
+Appointment Service
+		-- Consist
+		-- 1. Appointment Details
+		-- 2. in this service we use only patient id, doctor id and slot id 
+
+Patient Service
+		-- Consist
+		1. Patient Details
