@@ -3,6 +3,9 @@ package com.healthcare.doctor_service.service.grpc;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
+ * <pre>
+ * Doctor-related service
+ * </pre>
  */
 @io.grpc.stub.annotations.GrpcGenerated
 public final class DoctorServiceGrpc {
@@ -150,6 +153,9 @@ public final class DoctorServiceGrpc {
   }
 
   /**
+   * <pre>
+   * Doctor-related service
+   * </pre>
    */
   public interface AsyncService {
 
@@ -177,6 +183,9 @@ public final class DoctorServiceGrpc {
 
   /**
    * Base class for the server implementation of the service DoctorService.
+   * <pre>
+   * Doctor-related service
+   * </pre>
    */
   public static abstract class DoctorServiceImplBase
       implements io.grpc.BindableService, AsyncService {
@@ -188,6 +197,9 @@ public final class DoctorServiceGrpc {
 
   /**
    * A stub to allow clients to do asynchronous rpc calls to service DoctorService.
+   * <pre>
+   * Doctor-related service
+   * </pre>
    */
   public static final class DoctorServiceStub
       extends io.grpc.stub.AbstractAsyncStub<DoctorServiceStub> {
@@ -229,6 +241,9 @@ public final class DoctorServiceGrpc {
 
   /**
    * A stub to allow clients to do synchronous rpc calls to service DoctorService.
+   * <pre>
+   * Doctor-related service
+   * </pre>
    */
   public static final class DoctorServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<DoctorServiceBlockingStub> {
@@ -267,6 +282,9 @@ public final class DoctorServiceGrpc {
 
   /**
    * A stub to allow clients to do ListenableFuture-style rpc calls to service DoctorService.
+   * <pre>
+   * Doctor-related service
+   * </pre>
    */
   public static final class DoctorServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<DoctorServiceFutureStub> {

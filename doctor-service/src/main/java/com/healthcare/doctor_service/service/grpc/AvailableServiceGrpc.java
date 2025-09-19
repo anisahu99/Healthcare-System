@@ -3,6 +3,9 @@ package com.healthcare.doctor_service.service.grpc;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
+ * <pre>
+ * Availability-related service
+ * </pre>
  */
 @io.grpc.stub.annotations.GrpcGenerated
 public final class AvailableServiceGrpc {
@@ -150,6 +153,9 @@ public final class AvailableServiceGrpc {
   }
 
   /**
+   * <pre>
+   * Availability-related service
+   * </pre>
    */
   public interface AsyncService {
 
@@ -177,6 +183,9 @@ public final class AvailableServiceGrpc {
 
   /**
    * Base class for the server implementation of the service AvailableService.
+   * <pre>
+   * Availability-related service
+   * </pre>
    */
   public static abstract class AvailableServiceImplBase
       implements io.grpc.BindableService, AsyncService {
@@ -188,6 +197,9 @@ public final class AvailableServiceGrpc {
 
   /**
    * A stub to allow clients to do asynchronous rpc calls to service AvailableService.
+   * <pre>
+   * Availability-related service
+   * </pre>
    */
   public static final class AvailableServiceStub
       extends io.grpc.stub.AbstractAsyncStub<AvailableServiceStub> {
@@ -229,6 +241,9 @@ public final class AvailableServiceGrpc {
 
   /**
    * A stub to allow clients to do synchronous rpc calls to service AvailableService.
+   * <pre>
+   * Availability-related service
+   * </pre>
    */
   public static final class AvailableServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<AvailableServiceBlockingStub> {
@@ -267,6 +282,9 @@ public final class AvailableServiceGrpc {
 
   /**
    * A stub to allow clients to do ListenableFuture-style rpc calls to service AvailableService.
+   * <pre>
+   * Availability-related service
+   * </pre>
    */
   public static final class AvailableServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<AvailableServiceFutureStub> {
