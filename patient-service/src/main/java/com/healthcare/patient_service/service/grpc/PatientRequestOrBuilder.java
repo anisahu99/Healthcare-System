@@ -2,7 +2,7 @@
 // NO CHECKED-IN PROTOBUF GENCODE
 // source: patient.proto
 // Protobuf Java Version: 4.30.2
-package com.healthcare.patient_service.service.grpc;
+
 public interface PatientRequestOrBuilder extends
     // @@protoc_insertion_point(interface_extends:PatientRequest)
     com.google.protobuf.MessageOrBuilder {

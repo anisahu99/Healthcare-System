@@ -2,7 +2,7 @@
 // NO CHECKED-IN PROTOBUF GENCODE
 // source: patient.proto
 // Protobuf Java Version: 4.30.2
-package com.healthcare.patient_service.service.grpc;
+
 /**
  * Protobuf type {@code PatientResponse}
  */

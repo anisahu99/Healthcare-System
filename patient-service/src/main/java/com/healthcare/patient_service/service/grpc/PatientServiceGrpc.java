@@ -1,4 +1,3 @@
-package com.healthcare.patient_service.service.grpc;
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**

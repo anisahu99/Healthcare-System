@@ -7,7 +7,6 @@ import com.healthcare.doctor_service.repository.DoctorRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.print.Doc;
 import java.util.List;
 
 @Service
@@ -34,7 +33,7 @@ public class DoctorService {
 
     public List<Doctor> getDoctor(){
         try{
-            return doctorRepository.findAll();
+            return doctorRepository.findAllWithSlots();
         } catch (RuntimeException e) {
             throw new RuntimeException("Error at interacting with db", e);
         }
@@ -43,7 +42,7 @@ public class DoctorService {
 
     public List<Doctor>getDoctorBySpecialization(String specialization){
         try{
-        return doctorRepository.findBySpecialization(specialization);
+        return doctorRepository.findBySpecializationWithSlots(specialization);
         } catch (RuntimeException e) {
             throw new RuntimeException("Error at interacting with db", e);
         }

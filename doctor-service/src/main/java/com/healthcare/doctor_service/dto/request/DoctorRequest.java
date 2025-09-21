@@ -2,9 +2,9 @@ package com.healthcare.doctor_service.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-import lombok.Getter;
+import lombok.experimental.Accessors;
 
-@Data @Getter
+@Data @Accessors(chain=true)
 public class DoctorRequest {
     @NotBlank
     private String firstName;

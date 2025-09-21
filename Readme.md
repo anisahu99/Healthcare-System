@@ -14,3 +14,11 @@ means if some one book the slot of 2 oclock, iska kuch duration means 2 se leke 
 # \c ---><db-name>
 # \dt -->List of tables
 # SELCT * FROM <table-name>
+
+# Improvement Points
+---- Doctor Service--------
+1. Improve the slot booking per Doctor Specific with good technique(approach) in later.
+2. Every Doctor have Their View of their Profile(Doctor) and Slot and Patient Details.
+
+------ Patient Service ------------
+1. Patient 'End App' Can view of itself and Doctor Details 

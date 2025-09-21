@@ -42,7 +42,7 @@ public class AvailableServiceImpl extends AvailableServiceGrpc.AvailableServiceI
             slotListStreamObserver.onNext(slotList);
             slotListStreamObserver.onCompleted();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            slotListStreamObserver.onError(e);
         }
     }
 
@@ -60,7 +60,7 @@ public class AvailableServiceImpl extends AvailableServiceGrpc.AvailableServiceI
             responseStreamObserver.onNext(grpcResponse);
             responseStreamObserver.onCompleted();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            responseStreamObserver.onError(e);
         }
     }
 
@@ -76,7 +76,7 @@ public class AvailableServiceImpl extends AvailableServiceGrpc.AvailableServiceI
             bookSlotResponseStreamObserver.onNext(grpcResponse);
             bookSlotResponseStreamObserver.onCompleted();
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            bookSlotResponseStreamObserver.onError(e);
         }
 
     }
