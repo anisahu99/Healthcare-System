@@ -11,3 +11,47 @@ Appointment Service
 Patient Service
 		-- Consist
 		1. Patient Details
+
+
+
+
+Scale - Feature
+Koi bh doctor apne app ko register kr skta hai
+aur patient ko nearest location/manual location ki hissab se doctor suggest krega
+
+Registered Patient Rating and feedback de skte hai
+-------------------------------------
+
+Query likhne se pahle uski language likhlo
+
+is table se isle equal agar ho to ye aur ye yaha se le ana
+-----------------------------------------------------------------
+8459821946
+
+EDM Mall Parking Hilauli - Chaudhary
+
+600
+
+console.log("start");
+
+setTimeout(() => console.log("timeout"), 0);
+setImmediate(() => console.log("immediate"));
+process.nextTick(() => console.log("nextTick"));
+
+console.log("end");
+
+
+-------------------------------------------------------
+1. Create a table structure for customer  having id, name, email, mobile.
+
+2. Create a table structure for discount coupons.
+
+3. A discount coupon has title, coupon code, discount type (Fixed, Percentage), Expiry date, Customer (all or selected customer), minimum discount, maximum discount, usage per customer (Unlimited or fixed, in case of fixed store a number how many times a customer can use a coupon)
+
+4. Create api's to save, get list, update and delete the discount coupon.
+ 
+
+web flux
+fint line similar rest template
+ES Ecryptions
+Session Management

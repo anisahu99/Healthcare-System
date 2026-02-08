@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4e9f96a-f9e3-4ed9-b116-3ce24700a169" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/dto/request/DoctorRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/dto/request/DoctorRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/service/AvailableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/service/AvailableServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/service/DoctorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientProto.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientProto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientRequestOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientRequestOrBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientResponseOrBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientResponseOrBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientServiceGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/healthcare/patient_service/service/grpc/PatientServiceGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project Features.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Project Features.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/healthcare/api_gateway/ApiGatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/doctor-service/src/main/java/com/healthcare/doctor_service/controller/DoctorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +47,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "doctor-service-branch",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/healthcare-system/doctor-service/src/main/java/com/healthcare/doctor_service/service",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3534957",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;api-gateway-branch&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/healthcare-system/doctor-service/src/main/java/com/healthcare/doctor_service/service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3534957&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\healthcare-system\doctor-service\src\main\java\com\healthcare\doctor_service\service" />

@@ -27,8 +27,14 @@ public class DoctorController {
     public DoctorResponse createDoctor(@RequestBody @Valid DoctorRequest request){
 
         try{
+            System.out.println("request.firstName"+request.getFirstName());
+            System.out.println("request.lastName"+request.getLastName());
+            System.out.println("request.specialization"+request.getSpecialization());
+            System.out.println("request.code"+request.getCountryCode());
+            System.out.println("request.number"+request.getPhoneNumber());
             return doctorService.createDoctor(request);
         } catch (Exception e) {
+            System.out.println(e.getLocalizedMessage());
             throw new RuntimeException(e);
         }
     }
